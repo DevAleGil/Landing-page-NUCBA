@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Borel&family=Croissant+One&family=Kalam:wght@300;400;700&family=Pacifico&family=Playpen+Sans&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Borel&family=Croissant+One&family=Kalam:wght@300;400;700&family=Pacifico&family=Playpen+Sans&family=Roboto:wght@700&display=swap");
+:root {
+  --primera: rgb(0, 243, 223);
+  --segunda: rgb(0, 0, 0);
+  --tercera: rgb(255, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-  font-family: 'Kalam', cursive;  
-  background-color: rgb(0, 243, 223);
+  font-family: "Kalam", cursive;
+  background-color: var(--primera);
 }
-
 .navbar {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--segunda);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,13 +38,12 @@ body {
 }
 
 .nav-item {
-  background-color: rgb(0, 243, 223);
+  background-color: var(--primera);
   border-radius: 20px;
   padding: 0.5rem;
 }
 .nav-link {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  color: var(--segunda);
   font-weight: 700;
 }
 
@@ -69,10 +74,10 @@ main {
 
 .hero-title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-.hero-parrafo{
+.hero-parrafo {
   text-align: justify;
   font-size: 1rem;
 }
@@ -82,20 +87,18 @@ main {
 }
 
 .hero-link-1 {
-  text-decoration: none;
-  background-color: black;
+  background-color: var(--segunda);
   padding: 10px;
   border-radius: 20px;
-  color: white;
+  color: var(--tercera);
 }
 
 .hero-link-2 {
-  text-decoration: none;
-  border: 2px solid black;
+  border: 2px solid var(--segunda);
   padding: 10px;
   border-radius: 20px;
   color: black;
-  background-color: white;
+  background-color: var(--tercera);
 }
 
 .hero-imagen {
@@ -106,7 +109,6 @@ main {
   width: 300px;
   border-radius: 20px;
   border: 2px solid black;
-  
 }
 
 /* 2da Seccion: Informacion */
@@ -115,17 +117,160 @@ main {
   max-width: 1000px;
   margin-top: 50px;
   margin-left: 300px;
-  text-align: center;
   border-style: double;
   border-radius: 20px;
   border-color: black;
-
-  
 }
 
-.parrafo-info{
+.parrafo-info {
   font-size: 1rem;
   font-weight: 400px;
   text-align: justify;
   padding: 10px;
+}
+
+/* Seccion Beneficios*/
+
+.container-beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: 200px;
+  margin-top: 50px;
+
+  gap: 10px;
+}
+
+.parrafo-beneficios {
+  width: 60%;
+  text-align: center;
+}
+.container-cards {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.card {
+  border: 4px solid var(--segunda);
+  border-radius: 20px;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.card-parrafo {
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: var(--segunda);
+}
+
+/*Seccion contacto*/
+
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-left: 200px;
+}
+.container-contactos {
+  display: flex;
+  gap: 100px;
+}
+
+.contacto-datos {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.container-datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-contacto-dato {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.dato {
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+}
+
+.container-contacto-imagen {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.section-contacto-redes {
+  display: flex;
+  margin-top: 50px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+.redes a {
+  color: var(--segunda);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background-color: var(--segunda);
+  width: 100%;
+}
+
+.div-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer img {
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+footer p {
+  color: var(--tercera);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#menu-toggle {
+  display: none;
 }

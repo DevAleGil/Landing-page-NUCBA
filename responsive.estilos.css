@@ -1,0 +1,91 @@
+@media (max-width: 1100px) {
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    display: none;
+  }
+
+  .menu-navbar {
+    display: block;
+    background-color: var(--primera);
+    border-radius: 10px;
+    width: 40px;
+  }
+
+  .nav-item {
+    background-color: var(--segunda);
+    text-align: center;
+  }
+
+  .nav-link {
+    color: var(--primera);
+  }
+
+  #menu-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card:hover {
+    background-color: var(--segunda);
+    .card-title {
+      color: var(--primera);
+    }
+    .card-parrafo {
+      color: var(--primera);
+    }
+  }
+
+  .container-contactos{
+    flex-direction: column;
+  }
+}
+
+
+
+
+@media (max-width: 750px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero-imagen {
+    display: none;
+  }
+
+  .section-contacto-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .redes {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--segunda);
+  }
+
+  .redes a {
+    color: var(--primera);
+  }
+}
